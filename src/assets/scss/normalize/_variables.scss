@@ -4,6 +4,14 @@
 // You can override the default values by setting the variables in your Sass
 // before importing the normalize-scss library.
 
+// reset-margin & padding
+$margin-reset:  0;
+$padding-reset:  0;
+
+// width container
+$cont-width: 1305px;
+
+
 // The font size set on the root html element.
 $base-font-size: 16px !default;
 

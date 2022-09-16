@@ -10,11 +10,9 @@
 </template>
 
 <style lang="scss" scoped>
-  body {
-   width: 100%;
-   height: 100vh;
-  }
-
 
   @import '@/assets/scss/_normalize.scss'
+
+
+  
 </style>

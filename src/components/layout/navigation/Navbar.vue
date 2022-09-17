@@ -5,54 +5,39 @@
 
         </div>
 
-        <nav class="nav navbar container" id="navigation" role="navigation">
-            
+        <nav class="nav container" id="navigation" role="navigation">
+
+            <div class="nav-logo">
+                <h3 class="nav-logo__title">         The Baker      </h3>
+                <h5 class="nav-logo__subtitle">   Family   </h5>
+            </div>
+
             <div class="nav__interaction-user">
-
-                <img class="nav__interaction_search-img search_img" src="" alt="">
-                <input class="hidden nav__interaction_search-input" type="text">
-
-
+                <img class="interaction-user__search-img" src="" alt="">
+                <input v-model="inp"
+                 class="interaction-user__search-input" type="text">
+                {{ inp }}
                 <div class="nav__interaction-cart">
-                    <img class="nav__interaction_cart-img cart_img" src="" alt="">
-                    <span class="interaction-cart__count cart_count">
-
+                    <img class="interaction-cart__cart-img" src="" alt="">
+                    <span class="interaction-cart__cart-count">
+                            dfh
                     </span>
                 </div>
-
             </div>
+            
         </nav>
 
     </div>
 </template>
 
 <script setup>
+import { ref } from "@vue/reactivity";
 
+    const inp = ref('')
 </script>
 
 <style lang="scss" scoped>
-    @import "@/assets/scss/normalize/_variables.scss";  // variables
-    .navigation {
-            width: 100%;
-            min-height: 266px
-            
-    }
-
-    .container {
-        max-width: $cont-width;
-        height: 100%;
-        margin: 0 auto;
-    }
-    
-    body {
-        margin: $margin-reset;
-        padding: $padding-reset;
-        
-    }
-
-    .hidden {
-        display: none;
-    }
+    @import "@/components/layout/Navigation/navigation.scss";
     
 
 </style>

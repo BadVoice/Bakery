@@ -1,0 +1,23 @@
+ .discount-line{
+    display: flex;
+    width: 100%;
+    height: 39px;
+    background: #E1CEAC; 
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        letter-spacing: 0.08em;
+    }
+}
+
+
+
+    .container {
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        padding: 0 10px;
+    }

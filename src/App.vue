@@ -1,11 +1,12 @@
 <script setup>
   import { RouterLink, RouterView } from 'vue-router'
   import Navbar from '@/components/layout/Navigation/Navbar.vue'
+  import DiscountLine from './components/layout/DiscountLine/DiscountLine.vue';
 </script>
 
 <template>
-  <Navbar />
-
+  <DiscountLine />
+  <Navbar />  
   <RouterView />
 </template>
 

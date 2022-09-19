@@ -19,17 +19,27 @@
                 </div>
             </div>
 
+            <!-- mobile toggle menu-->
+            <div class="mobile__menu">
+                    
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                
+
+            </div>
+
             <div class="nav-logo">
                 <img src="./icons/logo.svg" alt="logo">
             </div>
 
 
             <div class="nav__interaction-user">
-
-                <img class="interaction-user__search-img" src="./icons/searchIcon.svg" alt="seacrhIcon">
                 <input v-model="inp"
-                    class="hidden interaction-user__search-input" type="text">
+                    class=" interaction-user__search-input" type="text">
                 {{ inp }}
+                <img class="interaction-user__search-img" src="./icons/searchIcon.svg" alt="seacrhIcon">
+                
 
                 <div class="nav_interaction-profile">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="0.7" stroke="currentColor" class="w-6 h-6">
@@ -44,12 +54,11 @@
                         01
                     </span>
                 </div>
-
                 
             </div>
             
         </nav>
-
+        
     </div>
 </template>
 
@@ -61,8 +70,19 @@
 </script>
 
 <style lang="scss" scoped>
+    //style
     @import "@/components/layout/Navigation/navigation.scss";
+
+    // mobile
+    @import "@/components/layout/Navigation/mobileNav.scss";
+    
+
+    //media
+    @import "@/components/layout/Navigation/mediaNav.scss";
+
+    // fonst
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
     
         
 

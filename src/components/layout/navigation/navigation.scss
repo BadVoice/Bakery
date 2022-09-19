@@ -86,8 +86,9 @@
         align-items: center;
         text-align: center;
         gap: 12px;
-        width: 100px;
+        
         justify-content: center;
+        
         
         .interaction-user__search-img {
             cursor: pointer;
@@ -114,7 +115,7 @@
             cursor: pointer;
         }   
 
-       
+    
     }
 
 
@@ -139,7 +140,7 @@
         max-width: 1315px;
         height: 100%;
         margin: 0 auto;
-        padding: 0 10px;
+        padding: 0 12px;
         
     }
     

@@ -1,0 +1,46 @@
+
+//hiddens elements in navbar
+
+@media screen and (max-width: 1100px) {
+    
+    .nav-menu {
+        display: none;
+    }
+
+    .mobile__menu {
+        display: flex;
+    }
+
+    .nav-logo {
+        width: 200px;
+        position: relative;
+    }
+
+    .nav-logo > img {
+        width: 100%; 
+        height: 100%;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .nav__interaction-user:last-of-type {
+        margin-left: 0px;
+    }
+    
+    }
+
+    @media screen and (max-width: 700px) { 
+        .interaction-user__search-input {
+            display: none;
+        }
+
+        .interaction-user__search-img {
+            display: none;
+        }
+
+        
+        
+
+    }

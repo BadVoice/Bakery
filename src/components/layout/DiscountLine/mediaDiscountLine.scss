@@ -4,3 +4,10 @@
         font-size: 11px;
     }
 }
+
+@media screen and (max-width: 400px) { 
+    .discount-line__title {
+        font-size: 3vw;
+    }
+}
+

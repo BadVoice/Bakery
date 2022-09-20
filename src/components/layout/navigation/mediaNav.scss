@@ -39,8 +39,15 @@
         .interaction-user__search-img {
             display: none;
         }
+    }
 
-        
-        
+    @media screen and (max-width: 400px) {
+        .container {
+            max-width: 100%;
+        }
 
+        .nav-logo > img {
+            width: 80%;
+            height: 100%;
+        }
     }

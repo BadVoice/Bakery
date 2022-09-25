@@ -18,19 +18,19 @@ import store from "./stores/counter";
 import cartModule from "./modules/cart";
 import productsModule from "./modules/products";
 
-import { registerModules } from "./register-modules";
+// import { registerModules } from "./register-modules";
 
 
-registerModules({
-  products: productsModule,
-  cart: cartModule
-});
+// registerModules({
+//   products: productsModule,
+//   cart: cartModule
+// });
 
-Vue.config.productionTip = false;
+// Vue.config.productionTip = false;
 
-new Vue({
-  router,
-  store,
-  vuetify,
-  render: h => h(App)
-}).$mount("#app");
+// new Vue({
+//   router,
+//   store,
+//   vuetify,
+//   render: h => h(App)
+// }).$mount("#app");

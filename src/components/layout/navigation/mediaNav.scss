@@ -13,7 +13,7 @@
 
     .nav-logo {
         width: 200px;
-        position: relative;
+        
     }
 
     .nav-logo > img {
@@ -31,10 +31,23 @@
     
     }
 
-    @media screen and (max-width: 700px) { 
+    
+    @media screen and (max-width: 950px) {
         .interaction-user__search-input {
             display: none;
         }
+
+        .interaction-user__search-img {
+            display: none;
+        }
+
+    }
+
+
+
+
+    @media screen and (max-width: 700px) { 
+        
 
         .interaction-user__search-img {
             display: none;
@@ -49,5 +62,6 @@
         .nav-logo > img {
             width: 80%;
             height: 100%;
+            position: relative;
         }
     }

@@ -2,17 +2,26 @@
   import { RouterLink, RouterView } from 'vue-router'
   import Navbar from '@/components/layout/Navigation/Navbar.vue'
   import DiscountLine from './components/layout/DiscountLine/DiscountLine.vue';
+  import NavMenu from "@/components/layout/NavMenu/NavMenu.vue";
 </script>
 
 <template>
   <DiscountLine />
-  <Navbar />  
+    <Navbar >  
+      <!-- MobileMenu-->
+      
+        <NavMenu> 
+
+
+      </NavMenu>
+
+    </Navbar>
   <RouterView />
 </template>
 
 <style lang="scss" scoped>
 
-  @import '@/assets/scss/_normalize.scss'
+  @import '@/assets/scss/_normalize.scss';
 
 
   

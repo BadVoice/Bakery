@@ -34,17 +34,24 @@
                 <div class="nav-logo">
                     <img src="./icons/logo.svg" alt="logo">
                 </div>
-    
+
+            
                 <div class="nav__interaction-user">
-                    <input v-if="isOpen"
-                        class=" interaction-user__search-input" type="text">
                     
-                    <a 
+                    <div class="search-box">
+                        <button class="btn-search">
+                            <i class="fas fa-search">
+                                <img src="./icons/searchIcon.svg" alt="">
+                            </i>
+                        </button>
+                    <input 
+                        class=" interaction-user__search-input input-search" type="text" placeholder="Type to Search..">
+                    </div>
+                    <!-- <a 
                         @click="isOpen = !isOpen"
                     >
-                        <img 
-                        class="interaction-user__search-img" src="./icons/searchIcon.svg" alt="seacrhIcon">
-                    </a>
+                        
+                    </a> -->
                     
                     <div class="nav_interaction-profile">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="0.7" stroke="currentColor" class="w-5 h-5">
@@ -61,6 +68,7 @@
                     </div>
                     
                 </div>
+                
                 
                 </nav>
             </div>

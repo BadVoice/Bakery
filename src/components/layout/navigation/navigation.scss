@@ -65,7 +65,7 @@
                 color: black;
               
 
-                font-family: 'Poppins', sans-serif;
+                font-family: $base-font-family;
                 font-size: $base-font-size;
                 
             }
@@ -224,4 +224,30 @@
         transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
       }
       
+      // nav bottom 
       
+      .bottom-nav  {
+        @include horizontal-list;
+        display: flex;
+        padding-top: 13px;
+        padding-bottom: 15px;
+        .bottom-nav__list {
+            display: flex;
+            gap: 35px;
+            
+            .bottom-nav__item {
+                gap: 5px;
+
+                .bottom-nav__arrow-img {
+                
+                    cursor: pointer;
+                }
+            }
+
+            .bottom-nav__item:last-child{
+                margin-right: 100px;
+            }
+            
+        }
+
+      }

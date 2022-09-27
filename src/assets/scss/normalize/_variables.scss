@@ -11,7 +11,7 @@ $padding-reset:  0;
 // The font size set on the root html element.
 
 $base-font-size: 14px !default;
-
+$medium-font-size: 15px;
 
 
 // The base line height determines the basic unit of vertical rhythm.
@@ -22,7 +22,7 @@ $base-line-height: 24px !default;
 $base-unit: 'em' !default;
 
 // The default font family.
-$base-font-family: null !default;
+$base-font-family: 'Poppins', !default;
 
 // The font sizes for h1-h6.
 $h1-font-size: 2    * $base-font-size !default;
@@ -41,3 +41,39 @@ $indent-amount: 40px !default;
 // However, changing any of the variables above will cause
 // $normalize-vertical-rhythm to be automatically set to true.
 $normalize-vertical-rhythm: false !default;
+
+
+// Reset default list styles 
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: flex-end;
+    
+    }
+
+@mixin font-list {
+    font-size: $medium-font-size;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    }
+
+@mixin font-family-list {
+    font-family: $base-font-family;
+}
+        
+
+
+@mixin horizontal-list {
+        a {
+            @include font-family-list();
+            @include font-list();
+        }
+
+        @include reset-list;
+
+        li {
+            display: flex;
+        }
+    }

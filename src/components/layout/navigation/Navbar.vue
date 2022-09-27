@@ -76,30 +76,61 @@
             <hr class="navLine">
 
                 <!--NavList-->
-            <div class="nav-lists">
-                <ul>
-                    <li>
-                        <a href=""></a>
-                        <img src="" alt="">
-                    </li>
-                    <li>
-                        <a href=""></a>
-                        <img src="" alt="">
-                    </li>
-                    <li>
-                        <a href=""></a>
-                        <img src="" alt="">
-                    </li>
-                    <li>
-                        <a href=""></a>
-                        <img src="" alt="">
-                    </li>
-                    <li>
-                        <a href=""></a>
-                        <img src="" alt="">
-                    </li>
-                </ul>
-            </div>
+            <div class="container">
+                <div class="bottom-nav">
+                    <ul class="bottom-nav__list">
+
+                        
+
+                        <li class="bottom-nav__item">
+                            <a class="bottom-nav__link" href="#">Cakes</a>
+                            <img class="bottom-nav__arrow-img" src="./icons/arrow.svg" alt="">
+                        </li>
+
+                        <li class="bottom-nav__item">
+                            <a class="bottom-nav__link" href="#">Pastries</a>
+                            <img class="bottom-nav__arrow-img" src="./icons/arrow.svg" alt="">
+                        </li>
+
+                        <li class="bottom-nav__item">
+                            <a class="bottom-nav__link" href="#">Bakery</a>
+                            <img class="bottom-nav__arrow-img" src="./icons/arrow.svg" alt="">
+                        </li>
+
+                        <li class="bottom-nav__item">
+                            <a class="bottom-nav__link" href="#">Gift Ideas</a>
+                            <img class="bottom-nav__arrow-img" src="./icons/arrow.svg" alt="">
+                        </li>
+
+                        <li class="bottom-nav__item">
+                            <a class="bottom-nav__link" href="#">Event & Corporates</a>
+                            <img class="bottom-nav__arrow-img" src="./icons/arrow.svg" alt="">
+                        </li>
+
+                        <li class="bottom-nav__item">
+                            <a class="bottom-nav__link" href="#">Seasonal</a>
+                            <img class="bottom-nav__arrow-img" src="./icons/arrow.svg" alt="">
+                        </li>
+
+                        <li class="bottom-nav__item">
+                            <a class="bottom-nav__link" href="#">Buffer</a>
+                            <img class="bottom-nav__arrow-img" src="./icons/arrow.svg" alt="">
+                        </li>
+
+                        <li class="bottom-nav__item">
+                            <a class="bottom-nav__link" href="#">WorkShop </a>
+                            
+                        </li>
+
+                        <li class="bottom-nav__item">
+                            <a class="bottom-nav__link" href="#">Contact </a>
+                            
+                        </li>
+                    </ul>
+
+                </div>
+            </div>    
+    
     </div>
     
 </template>

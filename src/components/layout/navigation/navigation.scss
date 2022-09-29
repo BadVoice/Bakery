@@ -63,7 +63,7 @@
             .nav-shop__link {
                 text-decoration: none;
                 color: black;
-              
+                
 
                 font-family: $base-font-family;
                 font-size: $base-font-size;
@@ -229,17 +229,26 @@
       .bottom-nav  {
         @include horizontal-list;
         display: flex;
-        padding-top: 13px;
-        padding-bottom: 15px;
+      
+        min-height: 22px;
+        padding: 13px 0 12.5px 0;
+        
         .bottom-nav__list {
             display: flex;
             gap: 35px;
             
             .bottom-nav__item {
                 gap: 5px;
+                align-items: center;
+                
+                .bottom-nav__link{
+                    color: black;
+                    text-transform: uppercase;
+                }
 
                 .bottom-nav__arrow-img {
-                
+                    min-width: 11px;
+                    height: 6px;
                     cursor: pointer;
                 }
             }
@@ -251,3 +260,125 @@
         }
 
       }
+
+
+
+      @import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
+*{
+    box-sizing: border-box;
+}
+.nav-menu{
+    max-width: 1305px;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 9px;
+     padding-bottom: 11px;
+    
+}
+nav li{
+    list-style-type: none;
+    border-right: 1px solid #FFFFFF;
+    padding-top: 4px;
+    padding-bottom: 7px;
+}
+a{
+    text-decoration: none;
+}
+nav li a{
+    font-size: 14px;
+    line-height: 16px;
+    font-family: 'Domine', serif;
+    letter-spacing: 0.08em;
+    color: white;
+    padding-right: 20px;
+    padding-top: 30px;
+}
+nav li:last-child{
+    border-right: none;
+}
+.nav_description{
+    background-color: rgba(51, 51, 51, 1);
+}
+.nav_description-list{
+    max-width: 740px;
+    margin: 0 auto;
+}
+
+
+.social{
+    max-width: 1585px;
+    margin: 0 auto;
+}
+.social-items{
+    display: flex;
+    padding: 0 8px;
+    gap: 8px;
+}
+.social h3{
+    font-family: 'Domine';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 46px;
+letter-spacing: 0.06em;
+text-align: center;
+}
+.social-text{
+    position: relative;
+}
+.social-arrow{
+    position: absolute;
+    width: 110px;
+    height: 2px;
+    background: #0B0B0B;
+    
+}
+
+.descr-nav {
+    @include horizontal-list;
+        
+        display: flex;
+        justify-content: center;
+        
+        background-color: #333333;
+        
+        padding: 16.5px 0 14px 0;
+
+    .descr-nav__item{
+            align-items: center;
+            max-height: 19px;
+        .descr-nav__vertical-link {
+            width: 30.77px;
+            height: 0px;
+            border: 1px solid #FFFFFF;
+            transform: rotate(90deg);
+            
+        }
+
+        .descr-nav__item:last-child {
+            border: none;
+        }
+
+        .descr-nav__link{
+            color: rgb(255, 255, 255);
+            font-size: $base-font-size;
+            font-family: $domine-font-family;
+            letter-spacing: 0.08em;
+            font-weight: 400;
+        } 
+    }
+}   
+
+.header {
+    height: 565px;
+    background-image: url('@/components/layout/Navigation/images/header-bg.png');
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
+}

@@ -80,8 +80,6 @@
                 <div class="bottom-nav">
                     <ul class="bottom-nav__list">
 
-                        
-
                         <li class="bottom-nav__item">
                             <a class="bottom-nav__link" href="#">Cakes</a>
                             <img class="bottom-nav__arrow-img" src="./icons/arrow.svg" alt="">
@@ -130,7 +128,53 @@
 
                 </div>
             </div>    
+
+            <section class="">
+                    <ul class="descr-nav">
+                        <li class="descr-nav__item">
+                            <a class="descr-nav__link" href="#">Seasonal Products </a>
+                            <div  class="descr-nav__vertical-link">
     
+                            </div>
+                        </li>
+    
+                        <li class="descr-nav__item descr-nav__vertical-link">
+                            <a class="descr-nav__link " href="#">Store Form 10 Am to 8 Pm</a>
+                            <div  class="descr-nav__vertical-link">
+    
+                            </div>
+                        </li>
+    
+                        <li class="descr-nav__item">
+                            <a class="descr-nav__link" href="#">Delivery & Shipping Policy</a>
+                            <div  class="descr-nav__vertical-link">
+    
+                            </div>
+                        </li>
+    
+                        <li class="descr-nav__item">
+                            <a class="descr-nav__link" href="#">FAQ</a>
+                            
+                        </li>
+                    </ul>
+                        
+            </section>
+            
+            <header class="header">
+                <div class="container">
+                    <h1></h1>
+                    <h5></h5>
+
+                    <div>
+                        <button>
+                            <p></p>
+                            <img src="" alt="">
+                        </button>
+                    </div>
+
+                </div>
+            </header>
+
     </div>
     
 </template>
@@ -157,7 +201,7 @@
 
     // fonst
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-
+    @import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
     
 
     

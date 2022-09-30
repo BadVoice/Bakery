@@ -1,3 +1,25 @@
 @import '@/assets/scss/normalize/_variables';
 @import '@/assets/scss/normalize/_vertical-rhythm';
 @import '@/assets/scss/normalize/_normalize-mixin';
+
+.container {
+    max-width: 1315px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 12px;
+    
+}
+
+body {
+    margin: $margin-reset;
+    padding: $padding-reset;
+    
+}
+
+.hidden {
+    display: none;
+}
+
+* {
+    box-sizing: border-box;
+}

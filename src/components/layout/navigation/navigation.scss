@@ -2,7 +2,7 @@
 
     .navigation {
         width: 100%;
-        min-height: 266px;
+        min-height: 218px;
         
     }
 
@@ -138,27 +138,7 @@
         cursor: pointer;
     } 
 // more 
-    .container {
-        max-width: 1315px;
-        height: 100%;
-        margin: 0 auto;
-        padding: 0 12px;
-        
-    }
-    
-    body {
-        margin: $margin-reset;
-        padding: $padding-reset;
-        
-    }
-
-    .hidden {
-        display: none;
-    }
-
-    * {
-        box-sizing: border-box;
-    }
+   
 
 
     .navLine {
@@ -345,7 +325,7 @@ text-align: center;
         
         background-color: #333333;
         
-        padding: 16.5px 0 14px 0;
+        padding: 16.5px 0 16.5px 0;
 
     .descr-nav__item{
             align-items: center;
@@ -372,13 +352,3 @@ text-align: center;
     }
 }   
 
-.header {
-    height: 565px;
-    background-image: url('@/components/layout/Navigation/images/header-bg.png');
-    background-repeat:no-repeat;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
-    background-size:cover;
-    background-position:center;
-}

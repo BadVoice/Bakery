@@ -31,9 +31,13 @@
                 
                 </div>
     
-                <div class="nav-logo">
-                    <img src="./icons/logo.svg" alt="logo">
-                </div>
+               <div class="nav-logo">
+                <RouterLink to="/">
+                  
+                        <img  src="./icons/logo.svg" alt="logo">
+                    
+                 </RouterLink>
+               </div>
 
             
                 <div class="nav__interaction-user">
@@ -160,20 +164,7 @@
                         
             </section>
             
-            <header class="header">
-                <div class="container">
-                    <h1></h1>
-                    <h5></h5>
-
-                    <div>
-                        <button>
-                            <p></p>
-                            <img src="" alt="">
-                        </button>
-                    </div>
-
-                </div>
-            </header>
+       
 
     </div>
     

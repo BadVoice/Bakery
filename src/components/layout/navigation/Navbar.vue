@@ -133,7 +133,7 @@
                 </div>
             </div>    
 
-            <section class="">
+            <section class="section-nav">
                     <ul class="descr-nav">
                         <li class="descr-nav__item">
                             <a class="descr-nav__link" href="#">Seasonal Products </a>

@@ -1,13 +1,11 @@
 <template>
     <div class="navMenu">
-        <div class="navMenu">
         
-        </div>
     </div>
 </template>
 
 <script setup>
-
+    
 </script>
 
 <style lang="scss">

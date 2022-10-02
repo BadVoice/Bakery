@@ -19,11 +19,15 @@
                         <a href="#" class="nav-shop__link">  Online Delivery </a>
                         <img class="arrow-icon" src="./icons/arrow.svg" alt="shopIcon">
                     </div>
+
                 </div>
+                
     
                 <!-- mobile toggle menu-->
                 <div v-bind:class="{ active: isActive }"
-                    @click="isActive = !isActive"
+                    @click.prevent="toggleModal"
+                   
+                    
                     class="toggle ">
                         
                     <span></span>
@@ -52,11 +56,7 @@
                     <input 
                         class=" interaction-user__search-input input-search" type="text" placeholder="Type to Search..">
                     </div>
-                    <!-- <a 
-                        @click="isOpen = !isOpen"
-                    >
-                        
-                    </a> -->
+                    
                     
                     <div class="nav_interaction-profile">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="0.7" stroke="currentColor" class="w-5 h-5">
@@ -77,6 +77,12 @@
                 
                 </nav>
             </div>
+        
+                <NavMenu 
+                v-if="isActive" 
+                v-on-click-outside="toggleModal" 
+                        />
+           
             
             <hr class="navLine">
 
@@ -164,20 +170,24 @@
                     </ul>
                         
             </section>
-            
-       
 
+           
+           
     </div>
     
 </template>
 
 <script setup>
     import { reactive, ref, } from "@vue/reactivity";
-    import NavMenu from "@/components/layout/Navigation/Navbar.vue";
+    import NavMenu from "../NavMenu/NavMenu.vue";
+    import { vOnClickOutside } from '@vueuse/components'
     
-    const isOpen = ref()
-    const openMenu = ref(false)
     const isActive = ref(true)
+    
+    function toggleModal() {
+        isActive.value = !isActive.value
+    }
+
 
 </script>
 

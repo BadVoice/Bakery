@@ -78,10 +78,12 @@
                 </nav>
             </div>
         
+              <transition name="slide-fade">
                 <NavMenu 
                 v-if="isActive" 
                 v-on-click-outside="toggleModal" 
                         />
+              </transition>
            
             
             <hr class="navLine">
@@ -206,8 +208,20 @@
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
     
-
-    
-        
+   /* Анимации появления и исчезновения могут иметь    */
+/* различные продолжительности и функции плавности. */
+.slide-fade-enter-active {
+    transition: all 0.5s ease-out;
+  }
+  
+  .slide-fade-leave-active {
+    transition: all 0.4s cubic-bezier(1, 0.5, 0.8, 1);
+  }
+  
+  .slide-fade-enter-from,
+  .slide-fade-leave-to {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
 
 </style>

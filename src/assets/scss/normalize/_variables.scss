@@ -4,6 +4,9 @@
 // You can override the default values by setting the variables in your Sass
 // before importing the normalize-scss library.
 
+//colors 
+$white: #FFFFFF;
+
 // reset-margin & padding
 $margin-reset:  0;
 $padding-reset:  0;
@@ -12,6 +15,9 @@ $padding-reset:  0;
 
 $base-font-size: 14px !default;
 $medium-font-size: 15px;
+$bold-font-size: 18px;
+$header-font-title:  65px;
+$header-font-subtitle: 30px;
 
 
 // The base line height determines the basic unit of vertical rhythm.

@@ -1,12 +1,14 @@
 <script setup>
   import Header from '@/components/layout/Header/Header.vue'
 
+import ProductCollection from '../modules/ProductCollection/ProductCollection.vue';
+ 
 </script>
 
 <template>
       <div class="home">
             <Header></Header>
-
+            <ProductCollection></ProductCollection>
       </div>
 </template>
 

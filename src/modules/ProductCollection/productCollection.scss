@@ -1,0 +1,41 @@
+@import "@/assets/scss/normalize/_variables.scss";  // variables
+
+.container {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    
+}
+
+.shop {
+    margin-top: 52px;
+}
+
+.collection {
+    display: grid;
+    grid-template-columns: 600px 1fr;
+    grid-template-rows: 1fr 1fr;
+    
+}
+
+.main-collection {
+    position: relative;
+    grid-row: 1 / 3;
+    padding-right: 36px;
+    
+}
+
+.collections__img {
+    width: 100%;
+}
+
+// .border-img {
+//     box-sizing: border-box;
+//     position: absolute;
+//     width: 534px;
+//     height: 585px;
+    
+
+//     border: 1px solid #FFFFFF;
+// }

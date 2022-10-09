@@ -7,10 +7,12 @@
             <h5 class="header__subtitle">Discover Our Festive  Range</h5>
 
             <div>
-                <button class="header-btn">
-                    <p class="header-btn__descr">Shop Now</p>
-                    <img class="header-btn__icon" src="./icons/down-arrow.png" alt="arrow-icon">
-                </button>
+                <RouterLink to="/shop" class="router">
+                    <button class="header-btn">
+                        <p class="header-btn__descr">Shop Now</p>
+                        <img class="header-btn__icon" src="./icons/down-arrow.png" alt="arrow-icon">
+                    </button>
+                </RouterLink>
             </div>
             </div>
 
@@ -19,9 +21,11 @@
 </template>
 
 <script setup>
-    
+    import { RouterLink } from "vue-router";
 </script>
 
 <style lang="scss" scoped>
-    @import "./header.scss"
+    @import "./header.scss";
+
+    
 </style>

@@ -184,7 +184,7 @@
     import NavMenu from "../NavMenu/NavMenu.vue";
     import { vOnClickOutside } from '@vueuse/components'
     
-    const isActive = ref(true)
+    const isActive = ref(false)
     
     function toggleModal() {
         isActive.value = !isActive.value

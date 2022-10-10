@@ -1,6 +1,6 @@
 <template>
     <header class="header">
-        <div class="header-overlay"> </div>
+        <div class="header-overlay" /> 
         <div class="container">
             <div class="header-flex">
                 <h1 class="header__title">Happy New Year</h1>
@@ -26,6 +26,6 @@
 
 <style lang="scss" scoped>
     @import "./header.scss";
-
+    @import "./mediaHeader.scss";
     
 </style>

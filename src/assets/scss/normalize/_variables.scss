@@ -17,7 +17,11 @@ $base-font-size: 14px !default;
 $medium-font-size: 15px;
 $bold-font-size: 18px;
 $header-font-title:  65px;
+
 $header-font-subtitle: 30px;
+
+// media  font
+$headerMedia-font-title: 3vw;
 
 
 // The base line height determines the basic unit of vertical rhythm.
@@ -30,6 +34,7 @@ $base-unit: 'em' !default;
 // The default font family.
 $base-font-family: 'Poppins', !default;
 $domine-font-family: 'Domine';
+
 
 // The font sizes for h1-h6.
 $h1-font-size: 2    * $base-font-size !default;

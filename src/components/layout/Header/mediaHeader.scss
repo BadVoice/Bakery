@@ -1,5 +1,16 @@
 @media screen and (max-width: 700px) { 
-    .header__title{
-        font-size: 3px;
+    .header__title {
+        color: $white;
+        font-family: $domine-font-family;
+        font-size: $headerMedia-font-title;
+        font-weight: 700;
     }
+
+   
+}
+
+@media screen and (max-width: 1100px) {
+    .container {
+        width: 90%;
+    } 
 }

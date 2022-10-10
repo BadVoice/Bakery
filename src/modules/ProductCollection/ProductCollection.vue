@@ -2,23 +2,30 @@
   <div class="shop">
     <div class="container">
       <div class="collection">
-
-        <div 
-         class="main-collection"
-         v-for="product in productCollection"  :key="product.id"
-         >
+          <div  class="main-collection">
+           
+            <img src="./images/collectionTreats.png">
+            <p class="collection__descr">fd fdh</p>
+            <RouterLink to="" href="">Shop Now</RouterLink>
+           
+          </div>
           
-          <img class="collections__img" :src="'/src/modules/ProductCollection/images/' + product.image" :alt="product.imageAlt">
-         
+          <div class="right-collection">
+           
+              
+                <img src="./images/collectionFestival.png">
+                <p class="collection__descr">fd fdh</p>
+                <RouterLink to="" href="">Shop Now</RouterLink>
+              
+              
+             
+                <img src="./images/collectionFestival.png">
+                <p class="collection__descr">fd fdh</p>
+                <RouterLink to="" href="">Shop Now</RouterLink>
+              
+
+          </div>
           
-          <p class="collections__descr">{{ product.name }}</p>
-          <RouterLink to="" href="">Shop Now</RouterLink>
-
-        </div>
-
-        
-
-       
       </div>
     </div>
   </div>
@@ -49,7 +56,7 @@ const productCollection = reactive([
       id: 3,
       name: 'Festival Collection',
       image: "collectionFestival.png",
-      imageAlt: 'collectionFestival',
+      imageAlt: 'collectionCakes',
       href: '#',
     
     },

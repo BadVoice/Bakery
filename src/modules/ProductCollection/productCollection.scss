@@ -34,25 +34,26 @@
 
 .main-collection > img {
     max-width: 608px;
+    max-height: 648px;
     width: 100%;
     cursor: pointer;
 }
 
-.right-collection > img {
+.right-collection> img {
     width: 100%;
-    max-width: 660px;
-    cursor: pointer;
+    
 }
 
 .right-collection {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    justify-content: space-between;
     width: 100%;
 }
 
 .collection__descr {
     letter-spacing: 0.06em;
+    padding-top: 5px;
     text-transform: uppercase;
     font-size: $collection-font-size;
     font-family: $base-font-family;
@@ -71,6 +72,7 @@
     font-weight: 300;
     font-size: 15px;
     line-height: 22px;
+    padding-top: 5px;
     letter-spacing: 0.06em;
     text-transform: capitalize;
     color: $black;
@@ -97,6 +99,14 @@
 	}
 }
 
+.right-collection__top > img {
+    max-width: 100%;
+    
+}
+
+.right-collection__bottom > img {
+    max-width: 100%;
+}
 // .link__line{
 //     border: 1px solid $orange-color-line;
     

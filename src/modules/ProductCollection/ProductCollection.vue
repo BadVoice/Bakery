@@ -15,24 +15,22 @@
           </div>
           
           <div class="right-collection">
-           
-              
-                <img src="./images/collectionCakes.png">
-                <p class="collection__descr">Special Cakes</p>
-                <RouterLink to="" class="collection__link">Shop Now
-                 
-                </RouterLink>
-              
-              
-             
+          
+                <div class="right-collection__top">
+                  <img src="./images/collectionCakes.png">
+                  <p class="collection__descr">Special Cakes</p>
+                  <RouterLink to="" class="collection__link">Shop Now
+                  </RouterLink>
+                </div>
+                
+              <div class="right-collection__bottom">
                 <img src="./images/collectionFestival.png">
                 <p class="collection__descr">Festival Collection</p>
                 <RouterLink to="" class="collection__link">Shop Now
-                
                 </RouterLink>
-                
+              </div>
 
-          </div>
+        </div>
           
       </div>
     </div>

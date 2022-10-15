@@ -2,6 +2,7 @@
   import Header from '@/components/layout/Header/Header.vue'
 
 import ProductCollection from '../modules/ProductCollection/ProductCollection.vue';
+import FavoriteProduct from '../components/layout/FavoriteProducts/FavoriteProduct.vue';
  
 </script>
 
@@ -9,6 +10,7 @@ import ProductCollection from '../modules/ProductCollection/ProductCollection.vu
       <div class="home">
             <Header></Header>
             <ProductCollection></ProductCollection>
+            <FavoriteProduct></FavoriteProduct>
       </div>
 </template>
 

@@ -1,0 +1,48 @@
+@import "@/assets/scss/normalize/_variables.scss";  // variables
+
+.container {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    
+}
+
+.favorite-Product {
+    height: 740px;
+    display: flex;
+    flex-direction: column;
+    gap: 58px;
+}
+
+.favorite-Title {
+    font-family: $domine-font-family;
+    font-size: 40px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+}
+
+.favorite-flex > span{
+    width: 110px;
+    height: 2px;
+    background: #0B0B0B;
+}
+
+.favorite-flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+}
+
+
+
+
+.productCard {
+    max-width: 1305px;
+    height: 540px;
+}

@@ -16,6 +16,7 @@ app.mount('#app')
 import store from "./stores/counter";
 
 import cartModule from "./modules/cart";
+
 import productsModule from "./modules/products";
 
 // import { registerModules } from "./register-modules";
@@ -34,3 +35,5 @@ import productsModule from "./modules/products";
 //   vuetify,
 //   render: h => h(App)
 // }).$mount("#app");
+
+import './assets/tailwind.css'

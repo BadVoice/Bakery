@@ -1,0 +1,81 @@
+ // mobile 
+
+ .toggle span {
+    position: absolute;
+    
+    width: 22px;
+    height: 2px;
+    background: #706f6f;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+ .toggle {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background: #fff;
+    
+    border-radius: 8px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+    
+}
+
+
+.toggle span:nth-child(1) {
+    transform: translateY(-8px);
+    position: absolute;
+    width: 13px;
+    left: 5px;
+    
+}
+
+.toggle.active span:nth-child(1) {
+    width: 22px;
+    transform: translateY(0px) rotate(45deg);
+    transition-delay: 0.125s;
+}
+
+
+
+.toggle span:nth-child(2) {
+    transform: translateY(8px);
+    position: absolute;
+    width: 13px;
+    left: 5px;
+}
+
+.toggle.active span:nth-child(2) {
+    width: 22px;
+    
+    transform: translateY(0px) rotate(315deg);
+    transition-delay: 0.25s;
+}
+
+.toggle.active span:nth-child(3) {
+    transform: translateX(60px);
+    position: absolute;
+    width: 15px;
+    left: 5px;
+    
+}
+
+@media screen and (max-width: 1100px) {
+    .toggle {
+        display: flex;
+        
+    }
+}
+
+
+    .toggle.active {
+        position: absolute;
+        top: -16px;
+        padding-left: 16px;
+    }
+    

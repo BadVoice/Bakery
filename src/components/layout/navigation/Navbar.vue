@@ -21,28 +21,20 @@
                     </div>
 
                 </div>
-                
+            
+
+                <MobileBtn 
+                    :class="{ active: isActive }"
+                    @click.prevent="toggleModal" class="max-w-[32px] max-h-[32px]">
+                </MobileBtn>
     
-                <!-- mobile toggle menu-->
-                <div v-bind:class="{ active: isActive }"
-                    @click.prevent="toggleModal"
-                   
+                <div class="nav-logo">
+                    <RouterLink to="/">
                     
-                    class="toggle ">
-                        
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                
-                </div>
-    
-               <div class="nav-logo">
-                <RouterLink to="/">
-                  
                         <img  src="./icons/logo.svg" alt="logo">
-                    
-                 </RouterLink>
-               </div>
+                        
+                    </RouterLink>
+                </div>
 
             
                 <div class="nav__interaction-user">
@@ -50,7 +42,7 @@
                     <div class="search-box">
                         <button class="btn-search">
                             <i class="fas fa-search">
-                                <img src="./icons/searchIcon.svg" alt="">
+                                <img class="search-icon"   src="./icons/searchIcon.svg" alt="">
                             </i>
                         </button>
                     <input 
@@ -77,64 +69,57 @@
                 
                 </nav>
             </div>
-        
-              <transition name="slide-fade">
-                <NavMenu 
-                v-if="isActive" 
-                v-on-click-outside="toggleModal" 
-                        />
-              </transition>
-           
+
             
             <hr class="navLine">
 
                 <!--NavList-->
             <div class="container">
                 <div class="bottom-nav">
-                    <ul class="bottom-nav__list">
+                    <ul  class="bottom-nav__list">
 
                         <li class="bottom-nav__item">
-                            <a class="bottom-nav__link" href="#">Cakes</a>
+                            <RouterLink to="/" class="bottom-nav__link" href="#">Cakes</RouterLink>
                             <img class="bottom-nav__arrow-img" src="./icons/arrow.svg" alt="">
                         </li>
 
                         <li class="bottom-nav__item">
-                            <a class="bottom-nav__link" href="#">Pastries</a>
+                            <RouterLink to="/" class="bottom-nav__link" href="#">Pastries</RouterLink>
                             <img class="bottom-nav__arrow-img" src="./icons/arrow.svg" alt="">
                         </li>
 
                         <li class="bottom-nav__item">
-                            <a class="bottom-nav__link" href="#">Bakery</a>
+                            <RouterLink to="/" class="bottom-nav__link" href="#">Bakery</RouterLink>
                             <img class="bottom-nav__arrow-img" src="./icons/arrow.svg" alt="">
                         </li>
 
                         <li class="bottom-nav__item">
-                            <a class="bottom-nav__link" href="#">Gift Ideas</a>
+                            <RouterLink to="/" class="bottom-nav__link" href="#">Gift Ideas</RouterLink>
                             <img class="bottom-nav__arrow-img" src="./icons/arrow.svg" alt="">
                         </li>
 
                         <li class="bottom-nav__item">
-                            <a class="bottom-nav__link" href="#">Event & Corporates</a>
+                            <RouterLink to="/" class="bottom-nav__link" href="#">Event & Corporates</RouterLink>
                             <img class="bottom-nav__arrow-img" src="./icons/arrow.svg" alt="">
                         </li>
 
                         <li class="bottom-nav__item">
-                            <a class="bottom-nav__link" href="#">Seasonal</a>
+                            <RouterLink to="/" class="bottom-nav__link" href="#">Seasonal</RouterLink>
                             <img class="bottom-nav__arrow-img" src="./icons/arrow.svg" alt="">
                         </li>
 
                         <li class="bottom-nav__item">
-                            <a class="bottom-nav__link" href="#">Buffer</a>
+                            <RouterLink to="/" class="bottom-nav__link" href="#">Buffer</RouterLink>
                             <img class="bottom-nav__arrow-img" src="./icons/arrow.svg" alt="">
                         </li>
 
                         <li class="bottom-nav__item">
-                            <a class="bottom-nav__link" href="#">WorkShop </a>
+                            <RouterLink to="/" class="bottom-nav__link" href="#">WorkShop </RouterLink>
                             
                         </li>
 
                         <li class="bottom-nav__item">
-                            <a class="bottom-nav__link" href="#">Contact </a>
+                            <RouterLink to="/" class="bottom-nav__link" href="#">Contact </RouterLink>
                             
                         </li>
                     </ul>
@@ -173,23 +158,29 @@
                         
             </section>
 
-           
-           
+            <transition name="slide-fade  mobileNav">
+                <NavMenu class="absolute top-0 z-10 flex-col h-screen" 
+                
+                v-if="isActive">
+
+                </NavMenu>
+            </transition>
+
     </div>
     
 </template>
 
 <script setup>
     import { reactive, ref, } from "@vue/reactivity";
-    import NavMenu from "../NavMenu/NavMenu.vue";
+    import NavMenu from '@/components/layout/NavMenu/NavMenu.vue';
     import { vOnClickOutside } from '@vueuse/components'
+    import MobileBtn from "../MobileBtn/MobileBtn.vue";
     
     const isActive = ref(false)
-    
+
     function toggleModal() {
         isActive.value = !isActive.value
     }
-
 
 </script>
 

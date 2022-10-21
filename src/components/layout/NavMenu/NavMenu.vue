@@ -5,7 +5,7 @@
     ">
 
         <div class="px-6 pt-6 bg-gray-700">
-            <div class="flex items-center justify-between pb-4">
+            <div class="flex items-center justify-end pb-4">
                 
                 <div class="bg-white cursor-pointer p-1 rounded-lg flex items-center justify-center">
                     <svg class="w-6 h-6  text-gray-500 stroke-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
@@ -47,7 +47,7 @@
                         </div> 
                         <button 
                         @click.prevent="openAccordion = !openAccordion"
-                        class=" flex items-center p-1 text-white">
+                        class=" flex items-center text-white p-1 w-[50%]  justify-end">
                                 <svg 
                                 v-if="!openAccordion"
                                 class="w-5 h-5 stroke-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
@@ -77,12 +77,12 @@
 
                         <li class=" text-xs inner flex
                             text-white duration-300 bg-gray-500 items-center rounded w-full"
-                            v-for='cake in categories.CailcutShop.categories.cakes.title' :key='cake'> 
+                            v-for='cake in cakes.title' :key='cake'> 
                                 <RouterLink  class="w-full p-2"
                                 :to="`/:${cake}`" >{{cake}}</RouterLink>
                                 <button 
                                 @click.prevent="openCakes = !openCakes"
-                                class=" flex items-center p-1 text-white">
+                                class=" flex items-center p-1 text-white w-[50%] justify-end">
                                         <svg 
                                         v-if="!openCakes"
                                         class="w-5 h-5 stroke-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
@@ -105,7 +105,7 @@
                         
                                     <li class=" text-xs inner flex
                                         text-black duration-300 bg-white items-center rounded w-full"
-                                        v-for='cake in categories.CailcutShop.categories.cakes.items' :key='cake'> 
+                                        v-for='cake in cakes.items' :key='cake'> 
                                             <RouterLink  class="w-full p-2"
                                             :to="`/:${cake}`" >{{cake}}</RouterLink>
                                     </li>
@@ -124,12 +124,12 @@
 
                     <li class=" text-xs inner flex
                         text-white duration-300 bg-gray-500 items-center rounded w-full"
-                        v-for='bakery in categories.CailcutShop.categories.bakery.title' :key='bakery'> 
+                        v-for='bakery in bakery.title' :key='bakery'> 
                             <RouterLink  class="w-full p-2"
                             :to="`/:${bakery}`" >{{bakery}}</RouterLink>
                             <button 
                             @click.prevent="openBakery = !openBakery"
-                            class=" flex items-center p-1 text-white">
+                            class=" flex items-center p-1 text-white w-[50%] justify-end">
                                     <svg 
                                     v-if="!openBakery"
                                     class="w-5 h-5 stroke-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
@@ -153,7 +153,7 @@
                                         
                                         <li class=" text-xs inner flex
                                             text-black duration-300 bg-white items-center rounded w-full"
-                                            v-for='bakery in categories.CailcutShop.categories.bakery.items' :key='bakery'> 
+                                            v-for='bakery in bakery.items' :key='bakery'> 
                                                 <RouterLink  class="w-full p-2"
                                                 :to="`/:${bakery}`" >{{bakery}}</RouterLink>
                                         </li>
@@ -172,11 +172,16 @@
 
 <script setup>
     import { reactive, toRefs, ref } from "@vue/reactivity";
+import { computed } from "@vue/runtime-core";
     
 
     const openAccordion = ref(true)
     const openCakes = ref(false)
     const openBakery = ref(false)
+
+    const cakes = computed(() => categories.CailcutShop.categories.cakes)
+    const bakery = computed(() => categories.CailcutShop.categories.bakery)
+
 
     const categories = reactive({
         CailcutShop: {
